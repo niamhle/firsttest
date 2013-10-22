@@ -1,0 +1,13 @@
+
+.imgright { 
+	float: right; 
+	padding:0.5cm;
+}
+.imgrightsmpad { 
+	float: right; 
+	padding:0.1cm;
+}	
+.rightalign {text-align:right}
+.centeralign {text-align:center;}
+.myfont {font-weight:bold;}
+.myfooterfont {text-align:center; font-size:70%;}
