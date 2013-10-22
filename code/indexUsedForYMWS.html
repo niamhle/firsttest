@@ -1,0 +1,592 @@
+<!DOCTYPE html> 
+<html> 
+	<head > 
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Create Stop Motion Animations</title> 
+
+<!-- Use this if want to personalize themes 	
+	<link rel="stylesheet" href="niamhtheme.css" />
+	<link rel="stylesheet" href="jquery.mobile.structure-1.0.1.min.css" />
+-->
+	<link rel="stylesheet" href="jquery.mobile-1.0.1.css" />
+	<script src="jquery-1.6.4.min.js"></script>
+	<script src="myscripts.js"></script>
+	<script src="jquery.mobile-1.0.1.js"></script>
+		
+<link rel="stylesheet" type="text/css" href="niamh1.css" />
+
+<style type="text/css">
+
+
+</style>
+
+
+<script type="text/javascript">
+		
+<!-- keep this as a catch all for additional jquery calls -->
+<!-- not behaviour with this is not consistent across Chrome (best) IE (okay) FF (does not toggle show)  -->
+
+$(document).ready(function(){
+	$("#testbut").click(function(){
+/* START DEBUG */ try{ 
+		$("p").toggle(1000,function(){
+			alert("all paragraphs are hidden or shown");
+		});
+/* END   DEBUG */ }catch(err){alert(err.message);}
+	});
+});
+
+
+</script>
+
+	
+</head> 
+<body> 
+
+<!-- The students page -->
+
+<div  id="student" data-role="page" data-theme="e">
+
+	<div data-role="header" >
+		<h1>Create Stop Motion Animations <br>
+		    Students</h1>
+		
+	</div><!-- /header -->
+
+	<div class="myfont"  data-role="content">	
+	
+		<div class="ui-grid-b">
+			<div class="ui-block-a" style="width:25%">
+			<p class="centeralign">
+			
+<img class="center" style="border:0" src="./images/cameratogame.jpg" alt="camera to game" width="250" height="370" />
+
+
+			</p>
+				
+			</div>
+			<div class="ui-block-b" style="width:50%">
+				<p class="centeralign">
+				Welcome!<br/>
+				Select steps below for help with making your stop motion animation video.<br/>
+				Have fun!<br>
+				</p>
+				
+				<p class="centeralign">
+
+				<a href="#step1" data-rel="dialog" data-transition="pop" data-role="button" data-theme="e" data-icon="arrow-r" data-iconpos="right">
+				Step 1 - View some sample animations</a> 
+				<a href="#step2" data-rel="dialog" data-transition="pop" data-role="button" data-theme="e" data-icon="arrow-r" data-iconpos="right">
+				Step 2 - Take your stills</a> 	
+				<a href="#step3" data-rel="dialog" data-transition="pop" data-role="button" data-theme="e" data-icon="arrow-r" data-iconpos="right">
+				Step 3 - Copy stills onto your computer</a> 	
+				<a href="#step4" data-rel="dialog" data-transition="pop" data-role="button" data-theme="e" data-icon="arrow-r" data-iconpos="right">
+				Step 4 - Make a basic video</a> 	
+				<a href="#step5" data-rel="dialog" data-transition="pop" data-role="button" data-theme="e" data-icon="arrow-r" data-iconpos="right">
+				Step 5 - Enhance your video</a> 
+				<a href="#step6" data-rel="dialog" data-transition="pop" data-role="button" data-theme="e" data-icon="arrow-r" data-iconpos="right">
+				Step 6 - Share your video</a> 	
+				</p>	
+			</div>
+			<div class="ui-block-c" style="width:25%">
+				<p class="rightalign">
+					<a href="#tutor" data-role="button" data-inline="true"  data-theme="b" data-icon="arrow-r" data-iconpos="right">Tutors</a> 
+				</p>
+			</div>
+		</div><!-- /grid-b -->
+
+		
+	</div><!-- /content -->
+
+	<div class="myfooterfont" data-role="footer">
+		<p>Niamh L'Estrange &copy; 2012</p>
+	</div>  <!-- /footer -->
+	
+</div><!-- /page -->
+
+<!-- The tutors page -->
+
+<div  id="tutor" data-role="page" data-theme="e">
+
+	<div data-role="header" data-theme="e">
+		<h1>Create Stop Motion Animations <br>
+		     Tutors</h1>
+		
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<div class="ui-grid-a">
+			<div class="ui-block-a" style="width:65%">
+			<p> 
+The workshop has been devised to engage students in a fun and creative activity where they produce a short stop motion animation video (10-20 secs) and post it to YouTube.  The students thus learn how to use contemporary digital technologies whilst engaged in the construction of digital objects.  Click below for some hints on how to use this workshop.	
+			<div data-role="collapsible-set" data-theme="d">			
+				<div data-role="collapsible">
+					<h3>Workshop Organisation</h3>
+					<p>
+					This activity can be used in a single class (allow at least 2 hours) or over a number of classes.  The students may work independently or collaboratively, but are strongly encouraged to help each other and exchange ideas. If time permits the students may make a number of different videos - they will gain more knowledge and confidence as they iterate through the process.
+					</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Resources Needed</h3>
+					<ul>
+					<li>Digital cameras with connectors - these can be shared between students. </li>
+					<li>Tripods, if available - small, simple ones are all that's needed. </li>
+					<li>Computers - these notes have been prepared for Windows 7 and using Movie Maker, but any video editing tool can be used. </li>
+					<li>Audio resources - it is useful to have a number of songs in mp3 format as students may find this task too time consuming. </li>
+					<li>Props - see next item! </li>
+					
+					</ul> 
+									
+				</div>
+				<div data-role="collapsible">
+					<h3>Suggestions for props</h3>
+					<p>
+					Encourage students to come up with their own ideas, but some handy ideas are:
+					</p>
+					<ul>
+					<li>Glasses filling and emptying of water.  Food dye can also be deployed!</li>
+					<li>Playing cards - build a house of cards and knock over.</li>
+					<li>Dominoes - lay out and knock over.</li>
+					<li>Plate of biscuits - to be eaten during video!</li>
+					<li>Pens and pencils in a container - getting tidied up.</li>
+					</ul>
+					<p>
+					Coloured items show up well in the end-product, especially if offset against a plain background.
+					</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>Copyright Issues</h3>
+					<p>
+					Ownership of the video rests with the creator. Videos posted onto YouTube will be analysed by YouTube and music segments may be identified and attributed to the music artist.  Using music segments in this way is allowed by YouTube as the videos (for the most part) only use music segments of approx 20 secs and the videos have no commercial value.
+					</p>
+				</div>
+				
+			</div>	
+		</div>
+			
+			<div class="ui-block-b" style="width:35%">
+				<p class="rightalign">
+					<a href="#student" data-role="button" data-inline="true"  data-theme="b" data-icon="arrow-r" data-iconpos="right">Students</a> 
+				</p>
+			</div>
+		</div><!-- /grid-b -->
+					
+	</div><!-- /content -->
+
+<div class="myfooterfont" data-role="footer" data-theme="e">
+<p>Niamh L'Estrange &copy; 2012</p>
+</div>  <!-- /footer -->
+	
+</div><!-- /page -->
+
+
+<!-- Step 1 Page -->
+<div id="step1" data-role="page" data-content-theme="d">
+
+<div data-role="header" data-theme="e">
+		<h1>Step 1 - View some sample animations</h1>
+</div><!-- /header -->
+
+<div data-role="content">	
+
+	<p> Have a look at these samples of short stop motion animations.  They're not going to win any awards - but they were were fun to make and quick!
+	</p>
+
+	<div data-role="collapsible" data-theme="c">
+		<h3>Sample 1: Elevenses!</h3>
+		<p class="centeralign">
+		<object width="425" height="350" data="http://www.youtube.com/v/tZzBmscbT6w">
+		<param name="movie" value="http://www.youtube.com/v/tZzBmscbT6w"> 
+		<param name="wmode" value="transparent">
+		<embed src="http://www.youtube.com/v/tZzBmscbT6w" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></object>
+		</p>
+	</div>
+	
+	<div data-role="collapsible" data-theme="c">
+		<h3>Sample 2: Yum, Yum!</h3>
+		<p class="centeralign">
+		<object width="425" height="350" data="http://www.youtube.com/v/Jn9eXfFiZSc">
+		<param name="movie" value="http://www.youtube.com/v/Jn9eXfFiZSc"> 
+		<param name="wmode" value="transparent">
+		<embed src="http://www.youtube.com/v/Jn9eXfFiZSc" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></object>
+		</p>
+	</div>
+	
+	<div data-role="collapsible" data-theme="c">
+		<h3>Sample 3: Why Bother?</h3>
+		<p class="centeralign">
+		<object width="425" height="350" data="http://www.youtube.com/v/SgemFfP_JKw">
+		<param name="movie" value="http://www.youtube.com/v/SgemFfP_JKw">
+		<param name="wmode" value="transparent">
+		<embed src="http://www.youtube.com/v/SgemFfP_JKw" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></object>
+		</p>
+
+	</div>
+
+</div><!-- /content -->
+	
+<div data-role="footer">
+	<div data-role="controlgroup" data-type="horizontal" >
+            <a href="#student" data-role="button" data-icon="arrow-l">Previous</a>
+            <a href="#student" data-role="button" data-icon="arrow-u">Home</a>
+            <a href="#step2" data-rel="dialog" data-transition="pop" data-role="button" data-icon="arrow-r">Next</a>
+	</div>
+</div>  <!-- /footer -->
+
+</div><!-- /page -->
+
+
+<!-- Step 2 Page -->
+<div id="step2" data-role="page" data-theme="c" data-content-theme="d">
+
+<div data-role="header" data-theme="e" >
+		<h1>Step 2 - Take your stills</h1>
+</div><!-- /header -->
+
+<div data-role="content">	
+	
+    <img class="imgright" style="border:0" src="./images/cameraontripod.jpg" alt="camera on tripod" width="160" height="141" />
+
+	<p>Here are some guidelines for taking your stills: </p>
+	
+	<ul>
+	<li>Keep the camera steady - use a <strong>tripod</strong> if available or get someone to take the photos for you.</li>
+	<li>You need about 5 stills for 1 sec of video - that means 50 for 10 secs!</li>
+	<li>Only change the objects' positions slightly for each still - it then gives a sense of movement.</li>
+	<li>Objects in funny positions work well in the video - play around!</li>
+	<li>Don't worry about the end result - you'll be surprised how well things look.</li>
+	</ul>
+	
+</div><!-- /content -->
+	
+<div data-role="footer">
+	<div data-role="controlgroup" data-type="horizontal" >
+            <a href="#step1" data-rel="dialog" data-transition="pop" data-role="button" data-icon="arrow-l">Previous</a>
+            <a href="#student" data-role="button" data-icon="arrow-u">Home</a>
+            <a href="#step3" data-rel="dialog" data-transition="pop" data-role="button" data-icon="arrow-r">Next</a>
+    </div>
+</div> <!-- footer -->
+
+</div><!-- /page -->
+
+<!-- Step 3 Page -->
+<div id="step3" data-role="page" data-content-theme="d">
+
+<div data-role="header" data-theme="e">
+	<h1>Step 3 - Copy stills onto your computer</h1>		
+</div><!-- /header -->
+
+<div data-role="content">	
+	
+    <img class="imgright" style="border:0" src="./images/connector.jpg" alt="connecting camera" width="160" height="141" />
+	
+	<p>
+	Create a new folder (under <b>Pictures</b>) and minimise the window. Connect your camera and access the folder containing the stills just taken.
+	Copy the stills into the folder on your computer. <br/><br/>
+	Click below for more help on each of these steps.
+	<br/>
+	</p>
+		
+	<div data-role="collapsible" data-theme="c" data-content-theme="d">
+		<h3>Create a new folder on computer</h3>
+		<ul>
+		<li>		Go to the <strong>Start Menu</strong> and select <strong>Pictures</strong>. </li>
+		<li>
+	   Under Pictures create a <strong>new folder</strong>.		
+     	<img src="./images/ssmod-createfolder.jpg" alt="create folder" width="300" height="102" />
+		</li>
+		<li>
+		Name the folder something related to your video e.g. <strong>games</strong>. </li>
+		<li>All files used for your video will be saved into this folder. </li>
+		<li>Minimise this window for now. </li>
+		</ul>
+		
+		</div>
+		
+		<div data-role="collapsible" data-theme="c">
+		<h3>Connect camera and select the folder with stills</h3>
+		<p>
+		<ul>
+		<li>Connect the camera and select it from <strong>Start Menu - Computer</strong></li>
+		<li>
+	    Locate the folder containing stills, usually locted under DCIM.		
+     	<img src="./images/ssmod-selectdcim.jpg" alt="create folder" width="300" height="113" />
+		</li>
+		<li>
+		Select the folder (named something like 116_024). You'll copy to the PC in the next step.</li>
+		</ul>
+		
+		</div>
+		<div data-role="collapsible" data-theme="c">
+		<h3>Drag&amp;Drop from camera to computer</h3>
+		
+		<ul>
+		<li>Align the two windows side by side: one from the camera; one from the computer. These are the two windows you just minimised.</li>
+		<li>Remember to resize and move the windows so that they are both visible side by side.</li>
+		<li>
+	    Drag and drop the <b>folder</b> from the camera onto the computer.  
+		</li>
+		<li>
+		This will copy <b>all</b> the stills contained in the folder on the camera onto your computer.</li>
+		<li>
+		If you do not want to copy over the entire folder, just select the stills you want to copy.  To select multiple stills: select the first one (Left-Click), hold the Shift key and select the last one.  Once selected, drag and drop using the left mouse.
+		</li>
+		</ul>
+		</div>
+
+</div><!-- /content -->
+	
+<div data-role="footer">
+
+<div data-role="controlgroup" data-type="horizontal" >
+			<a href="#step2" data-rel="dialog" data-transition="pop" data-role="button" data-icon="arrow-l">Previous</a>	
+            <a href="#student" data-role="button" data-icon="arrow-u">Home</a>
+            <a href="#step4" data-rel="dialog" data-transition="pop" data-role="button" data-icon="arrow-r">Next</a>            
+         </div>
+</div> <!-- footer -->
+
+
+</div><!-- /page -->
+
+<!-- Step 4 Page -->
+<div id="step4" data-role="page" data-content-theme="d">
+
+<div data-role="header" data-theme="e">
+		<h1>Step 4 - Make a basic video</h1>
+		
+</div><!-- /header -->
+
+<div data-role="content" >	
+ <img class="imgright" style="border:0" src="./images/scaledwinmm.png" alt="windows movie maker" width="150" height="150" />
+	
+	<p>
+	Use <b>Windows Movie Maker</b> to make a basic video.  Add the stills to a new project under Movie Maker, edit them to remove any unwanted stills, set the duration for each still to 0.2 secs and view results!
+	<br/><br/>
+	Click below for more help on each of these steps.
+	<br/>
+	
+	<div data-role="collapsible" data-theme="c">
+		<h3>Start Movie Maker and add stills</h3>
+		<ul>
+		<li>Go to the <strong>Start Menu</strong> and type <strong>movie maker</strong>. </li>
+		<li>
+	   This will start up Windows Movie Maker in new window.		
+     	</li>
+		<li>
+Add the stills by first selecting to <b>Add videos and photos</b>	   	
+     	<img src="./images/ssmod-addphotos.png" alt="add photos" width="300" height="97" />
+		</li>		
+		<li>
+		Then browse to your folder (created under <b>Pictures</b>) and open it.</li>
+		<li>Select the first one (Left-Click), hold the Shift key, select the last one (Left-Click) and <b>Open</b>.
+		</li>
+		<li>This copies all your photos into your new movie project. Don't worry, you'll have time to remove any unwanted photos shortly.</li>
+		</ul>
+		</div>
+		<div data-role="collapsible" data-theme="c">
+		<h3>Save your project</h3>
+		<p>
+		It is a good idea to save your project now and remember to save regularly as you work. <br/>
+		To save:
+		<img  class="imgrightsmpad" src="./images/ssmod-saveproject.png" alt="save project" width="200" height="230" />
+		
+		<ul>
+		<li>Select to save your <b>project</b>. </li>
+		<li>Browse to save it to the folder you created on your computer (under <b>Pictures</b>) and name it something useful e.g. games.</li>
+		<li>This creates a project file for your work that you can return to at any time.</li>
+		</ul>
+		
+		</div>
+		
+		<div data-role="collapsible" data-theme="c">
+		<h3>Remove any unwanted stills</h3>
+		<ul>
+		<li>Remove an unwanted stills from within Movie Maker.</li>
+		<li>Simply, select any stills your don't want to include (left-click) and then Right-Click – Remove.</li>
+		<li>Remember to save your work! (Ctrl-S will save it to the project file you just created)</li>
+		</ul>
+		
+				</div>
+		<div data-role="collapsible" data-theme="c">
+		<h3>Select all stills and change the duration</h3>
+		<p>
+		You are now ready to make the video.
+		<ul>
+				<li>Select the first one (Left-Click), hold the Shft key, select the last one (Left-Click) </li>
+		<li>With all selected, click <b>Edit</b> from the menu bar and set the duration to 0.2 secs. <br/>
+		<img  src="./images/ssmod-editduration.png" alt="edit duration" width="300" height="102" />
+		
+		</li>
+		<li> <img  class="imgrightsmpad" src="./images/ssmod-play.png" alt="play" width="136" height="47" />
+		
+		Select <b>Play</b> to see how this looks. <br/>
+			(On left hand side under Previewed photo) 
+			</li>
+		</ul>
+		<p><b>Aside: </b> You can change the duration of the display of any single still simply by just selecting that still and then modifying the duration.  For this stop motion animation a duration of 0.2 secs for all stills creates a sense of motion.
+		
+		</p>
+		</div>
+	<div data-role="collapsible" data-theme="c">
+		<h3>Save your work and view it!</h3>
+		<p>
+		<img  class="imgrightsmpad" src="./images/ssmod-saveasemail.png" alt="save as email" width="270" height="240" />
+		</p>
+		<ul>
+		<li>As before, save your work!</li>
+		<li>To make a playable video you must save your movie.</li>
+		<li>For this exercsie save your movie for <b>email</b>  - this will make a small, manageable file. </li>
+		<li>As before, browse to save it to the correct folder.</li>
+		<li>You can now exit movie maker and view your created video.</li>
+		</ul>
+		</div>
+	
+</div><!-- /content -->
+	
+<div data-role="footer">
+
+<div data-role="controlgroup" data-type="horizontal" >
+            <a href="#step3" data-rel="dialog" data-transition="pop" data-role="button" data-icon="arrow-l">Previous</a>	
+            <a href="#student" data-role="button" data-icon="arrow-u">Home</a>
+            <a href="#step5" data-rel="dialog" data-transition="pop" data-role="button" data-icon="arrow-r">Next</a>         
+         </div>
+</div> <!-- footer -->
+
+
+</div><!-- /page -->
+
+<!-- Step 5 Page -->
+<div id="step5" data-role="page" data-content-theme="d">
+
+<div data-role="header" data-theme="e">
+		<h1>Step 5 - Enhance your video</h1>
+		
+</div><!-- /header -->
+
+<div data-role="content">	
+
+	<p> You may like to enhance your video by adding music, titles and credits.  Select the options below to find out how.
+	<div data-role="collapsible-set">
+	<div data-role="collapsible" data-theme="c">
+		<h3>Add music</h3>
+		<ul>
+		<li>
+		First, select the music you wish to add.  It is easiest if music is in <b>mp3</b> format.  Use music from:
+			<ul>
+			<li>Your own CDs (ripped onto your computer).</li>
+			<li>From mps3 files supplied (ask tutor).</li>
+			<li>YouTube - but remember music must be converted to mp3 format to use.</li>
+			</ul>
+		</li>
+		<li>Copy this music into the same folder (under Pictures) as your video.</li>
+		<li>Add this music to your video using Movie Maker. <br/>
+		<img   src="./images/ssmod-addmusic.png" alt="add music" width="250" height="123" />
+		</li>
+		<li>
+		Once added the music can be editted to change:
+			<ul>
+			<li>Start Time i.e. when in your video the music will start at</li>
+			<li>Start Point i.e. the point in the music that will play <br/>
+			<li>End Point i.e. the point in the music that the music will end (ignore this!)<br/>
+		<img   src="./images/ssmod-changemusic.png" alt="edit music" width="280" height="123" />
+			</li>
+			</ul>
+		</li>
+		<li>The music can also be <b>Faded in</b> and <b>Faded out</b>. This has a nice effect at the start and the end of the video.</li>
+		</ul>
+	
+
+	</div>
+	<div data-role="collapsible" data-theme="c">
+		<h3>Add Titles</h3>
+		<img   class="imgrightsmpad" src="./images/ssmod-addtitle.png" alt="add title" width="150" height="112" />
+		<ul>
+		<li>
+		First position the cursor at the start of the movie i.e. just before the very first still.  
+		</li>
+		<li>
+		Select title from the top banner.  This will add a new slide containing text for your title.
+		</li>
+		<li> Once added the text can be editted as can the duration of the title display.
+		</ul>
+	</div>
+	<div data-role="collapsible" data-theme="c">
+		<h3>Add Credits</h3>
+		<img   class="imgrightsmpad" src="./images/ssmod-addtitle.png" alt="add credits" width="150" height="112" />
+		<ul>
+		<li>
+		To add credits position the cursor at the end of the movie i.e. just after the very last still.
+		</li>
+		<li>
+		Select credits from the top banner.  This will add a new slide containing text for your credits.
+		</li>
+		<li> As with the titles, the text can be editted as can the duration of the credit display.
+		<li> Remember also that the music can be fadded in or out at this stage if not already done. </li>
+		</ul>
+		
+	</div>
+	</div>
+
+</div><!-- /content -->
+	
+<div data-role="footer">
+
+<div data-role="controlgroup" data-type="horizontal" >
+            <a href="#step4" data-rel="dialog" data-transition="pop" data-role="button" data-icon="arrow-l">Previous</a>	
+            <a href="#student" data-role="button" data-icon="arrow-u">Home</a>
+            <a href="#step6" data-rel="dialog" data-transition="pop" data-role="button" data-icon="arrow-r">Next</a>         
+         </div>
+</div> <!-- footer -->
+
+
+</div><!-- /page -->
+
+<!-- Step 6 Page -->
+<div id="step6" data-role="page" data-content-theme="d">
+
+<div data-role="header" data-theme="e">
+		<h1>Step 6 - Share your video</h1>
+		
+</div><!-- /header -->
+
+<div data-role="content">	
+ <img class="imgright" style="border:0" src="./images/scaledyoutube_logo.png" alt="youtube" width="150" height="87" />
+	
+	<p>
+	Publish your video on YouTube.  You can do this though your own account or through the account set up for this class.
+	</p>
+	<ul>
+	<li>First remember to save your project AND save your movie (<b>save for email</b> as this is quickest)</li>
+	<li>Sign in to 
+	<a  target="_blank" href="
+https://accounts.google.com/ServiceLogin?uilel=3&amp;service=youtube&amp;passive=true&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26feature%3Dheader%26nomobiletemp%3D1%26hl%3Den_US%26next%3D%252Fhtml5">YouTube</a> using the name <b>digitaloutputs2012</b>.  Your tutor will supply the password.</li>
+	<li>Select to <b>upload</b> the video. </li>
+	<li>Select the correct file from your computer, the file type is <b>windows media video (.wmv).</b> </li>
+	<li>You can add a Title, Description and Tag as you wish.</li>
+	<li>YouTube will generate a URL - click this to play your video.</li>
+	<li>Email this URL to yourself for future reference!</li>
+	</ul>
+
+	<p class="centeralign">
+	<strong>Well done!</strong> 
+</p>
+
+</div><!-- /content -->
+	
+<div data-role="footer">
+
+<div data-role="controlgroup" data-type="horizontal" >
+            <a href="#step5" data-rel="dialog" data-transition="pop" data-role="button" data-icon="arrow-l">Previous</a>	
+             <a href="#student" data-role="button" data-icon="arrow-u">Home</a>
+            <a href="#student" data-rel="dialog" data-transition="pop" data-role="button" data-icon="arrow-r">Next</a>	
+         </div>
+</div> <!-- footer -->
+
+
+</div><!-- /page -->
+
+
+
+</body>
+</html>
